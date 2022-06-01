@@ -1,0 +1,11 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(98, 91, 91);
+    box-shadow: 24;
+    padding: 25px;
+    width: 400px;
+}
