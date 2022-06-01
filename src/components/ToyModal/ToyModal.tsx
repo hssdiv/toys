@@ -19,7 +19,7 @@ interface IToyModal {
 export const ToyModal = ({ toy, modalOpen, setModalOpen }: IToyModal): ReactElement => {
 
     const [toyName, setToyName] = useState(toy?.name || '');
-    const [toyType, setToyType] = useState(toy?.type || '')
+    const [toyType, setToyType] = useState(toy?.type || '0')
     const [toyDescription, setToyDescription] = useState(toy?.description || '')
 
     const dispatch = useAppDispatch();
@@ -90,7 +90,7 @@ export const ToyModal = ({ toy, modalOpen, setModalOpen }: IToyModal): ReactElem
                                 required: 'Type is required'
                             })}
                             required
-                            defaultValue="1"
+                            defaultValue="0"
                             id="type"
                             value={toyType}
                             label="Type"
